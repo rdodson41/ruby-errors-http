@@ -1,0 +1,19 @@
+language: ruby
+rvm:
+- 2.3.0
+- 2.2.5
+- 2.1.2
+- 2.0.0
+before_install: gem install bundler
+deploy:
+  provider: rubygems
+  api_key:
+    secure: aPNwpC7H5FyT0HxvSFkjdEgyuxy8t4tg+bVlHI6587qSbGc1Y0E27FRk5dntE+2Plk3gbU94aoqgDH6IjPtlM5lBFJqdqQYxGOCYgbsCX+/arER/5LKru43p3xmGfszialApFQ0AC/oULpIkD1tOewKByXj8Du6q2MocP03ewehMhu2U2gmenPgMtqd19+LtPQiUg9dzTxQdqGXmNA3Pq5+xmmQP2IfWx4CW4j6Rc3Pr1ivvoSTrxEXx94aTPkckWKNY11q6vaG5+uM3Qe8XMsWlwQ9i1HhxCLAk+zCJO2Vn8CMrePNILzD6kBFvfLrCjndDzoLAUPivpy8361DKJtOAexa0iXDt+6Uq6wwXhhy2YW6vysPhaFevvabkxevLr0epp6KdWhyRs+4Y+XAbiJEENTC5fBoDym6pQB3Fpdd9DepxXdoTs9W8Qn91oym/jdU+eSH+3i5gi2e/BJ4Mck6qifS3wXft05+6naW/8vu3zpjwdiPXb2Ya/3eERFZ0vKr1PBvo5utfuXvkumJgP/vxXZQWnj5gFrfG6tStDnt5zs2W25R1lHMjtIsN+TecBu/v3s4P5Gz9QLI/PtymhCEIxHueTmRlzBBvB+Q9U09DC2TM8BHBqhzMnS86C56CYAOfRZfhH9eNj95NtcPFUQhv4CzPIZYca2ocO+yux5c=
+  gem: errors-http
+  on:
+    tags: true
+    repo: rdodson41/ruby-errors-http
+addons:
+  code_climate:
+    repo_token:
+      secure: jyyqagq8YJyHPU/GDtqezm70FdTRuE2HWCdXUIAqKsNKMvhIulXLht17NHDO2t4qSyw0KCiLrjz9ndv3FB4NJXszTMXh7Fg8wW9DCvjz1RpZCsHoQaOIFnSnoXPoSuRtbRL41L+E70J1eWiBZOGLa+/qgHmJyI9dKPowL5Lw3NvBQ6OxahcvJpZqDh/KaohxZzvFeKTNYZYbsoss62vbEhy/No3o72g81b4sQm/JGNxi6SeewJYjZDzoqthkNZ2o0Eo3inuVlWImPll7UUaH2PCQvI3Y/O4NOkPdFpTJZ31aIzN/SnCw2XiinPW5N4l2BNjrsJXF+rwfL/kYQi07ikNMwhIaBP7udIwMUcFJ9+tDCT57RUMo0jC6BTh0dUMp1n9ksbeSp+aAiJYH0NofKpI8g93imBYaQz+yGPU8oPAJMm+hfQkSlPnPpt4NVSU0jGQ5TCxsiJnfXzTQ+S3OhYogJrClDAI99x+FcUohRj5oc+TJ7eXbjd36TuIasIC41OpIehj3FBv8xH2tzmK8iMdBky9ZWbNFj567WXChgHdwZm+9tujqdKxkVL9fA70mBVWzyLpB9kovKyZxfVKXqz6Q75pHz0fr+mbCN7dmofl/qYvyzGJU0cpYD//NXJ2ORj5OmGWuYmg2FTeB9aNV/WTUKYsPsIrLq7xjYdSMXYI=
