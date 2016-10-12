@@ -1,5 +1,5 @@
 module Errors
-  module HTTP
-    VERSION = '0.1.0'.freeze
+  class HTTP < StandardError
+    VERSION = '0.2.0'.freeze
   end
 end
